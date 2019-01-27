@@ -3,9 +3,10 @@
   <groupId>pers.linhai</groupId>
   <artifactId>nature-j2ee-core</artifactId>
   <versioning>
+    <release>2.5.2-RELEASE</release>
     <versions>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>2.5.2-RELEASE</version>
     </versions>
-    <lastUpdated>20190127025251</lastUpdated>
+    <lastUpdated>20190127082803</lastUpdated>
   </versioning>
 </metadata>
