@@ -1,4 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+<<<<<<< HEAD
 #Tue Feb 12 10:12:17 CST 2019
+=======
+#Fri Feb 01 13:53:28 CST 2019
+>>>>>>> 338a858ec42ebd5c41a43afdc1fdb7fefc5d3a8e
 nature-esmapper-2.0.2-RELEASE.pom>=
 nature-esmapper-2.0.2-RELEASE.jar>=
