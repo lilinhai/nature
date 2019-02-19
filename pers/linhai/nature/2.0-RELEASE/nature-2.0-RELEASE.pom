@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pers.linhai</groupId>
@@ -38,8 +37,12 @@
         <nature.esmapper.artifactId>nature-esmapper</nature.esmapper.artifactId>
         <nature.esmapper.autoconfigure.artifactId>nature-esmapper-autoconfigure</nature.esmapper.autoconfigure.artifactId>
         <nature.esmapper.log4jappender.artifactId>nature-esmapper-log4jappender</nature.esmapper.log4jappender.artifactId>
-        <nature.j2ee.artifactId>nature-j2ee</nature.j2ee.artifactId>
-        <nature.j2ee.core.artifactId>nature-j2ee-core</nature.j2ee.core.artifactId>
+        <nature.spring.artifactId>nature-spring</nature.spring.artifactId>
+        <nature.spring.application.artifactId>nature-spring-application</nature.spring.application.artifactId>
+        <nature.spring.common.artifactId>nature-spring-common</nature.spring.common.artifactId>
+        <nature.dao.artifactId>nature-dao</nature.dao.artifactId>
+        <nature.dao.database.artifactId>nature-dao-database</nature.dao.database.artifactId>
+        <nature.dao.database.spring.artifactId>nature-dao-database-spring</nature.dao.database.spring.artifactId>
         
         <!-- 框架各模块版本定义 -->
         <nature.version>2.0-RELEASE</nature.version>
@@ -48,14 +51,28 @@
         <nature.esmapper.autoconfigure.version>2.0.2-RELEASE</nature.esmapper.autoconfigure.version>
         <nature.esmapper.log4jappender.version>2.0.2-RELEASE</nature.esmapper.log4jappender.version>
         <nature.esmapper.version>2.0.2-RELEASE</nature.esmapper.version>
-        <nature.j2ee.version>2.5-RELEASE</nature.j2ee.version>
-        <nature.j2ee.core.version>2.5.2-RELEASE</nature.j2ee.core.version>
+        <nature.spring.version>2.5-RELEASE</nature.spring.version>
+        <nature.spring.application.version>2.5.2-RELEASE</nature.spring.application.version>
+        <nature.spring.common.version>2.1.0-RELEASE</nature.spring.common.version>
+        <nature.dao.version>2.1-RELEASE</nature.dao.version>
+        <nature.dao.database.version>2.1.0-RELEASE</nature.dao.database.version>
+        <nature.dao.database.spring.version>2.1.0-RELEASE</nature.dao.database.spring.version>
     </properties>
 
     <!-- 所有需要用到的依赖声明 -->
 	<dependencyManagement>
 		<dependencies>
             <!-- nature框架组件声明 -->
+			<dependency>
+                <groupId>${nature.groupId}</groupId>
+                <artifactId>${nature.dao.database.artifactId}</artifactId>
+                <version>${nature.dao.database.version}</version>
+			</dependency>
+			<dependency>
+                <groupId>${nature.groupId}</groupId>
+                <artifactId>${nature.dao.database.spring.artifactId}</artifactId>
+                <version>${nature.dao.database.spring.version}</version>
+			</dependency>
 			<dependency>
                 <groupId>${nature.groupId}</groupId>
                 <artifactId>${nature.core.artifactId}</artifactId>
@@ -78,8 +95,13 @@
             </dependency>
             <dependency>
                 <groupId>${nature.groupId}</groupId>
-                <artifactId>${nature.j2ee.core.artifactId}</artifactId>
-                <version>${nature.j2ee.core.version}</version>
+                <artifactId>${nature.spring.application.artifactId}</artifactId>
+                <version>${nature.spring.application.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${nature.groupId}</groupId>
+                <artifactId>${nature.spring.common.artifactId}</artifactId>
+                <version>${nature.spring.common.version}</version>
             </dependency>
         
 			<!-- 微服务注册中心 -->
@@ -170,6 +192,11 @@
 				</exclusions>
 			</dependency>
             <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-undertow</artifactId>
                 <version>${spring.boot.version}</version>
@@ -252,16 +279,6 @@
 			    <groupId>org.mybatis.spring.boot</groupId>
 			    <artifactId>mybatis-spring-boot-starter</artifactId>
 			    <version>2.0.0</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-jdbc</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.mybatis.spring.boot</groupId>
-                        <artifactId>mybatis-spring-boot-autoconfigure</artifactId>
-                    </exclusion>
-                </exclusions>
 			</dependency>
             
             <dependency>
@@ -441,8 +458,9 @@
         <module>nature-esmapper</module>
         <module>nature-esmapper-autoconfigure</module>
         <module>nature-esmapper-log4jappender</module>
-        <module>nature-j2ee</module>
-    </modules>
+        <module>nature-dao</module>
+        <module>nature-spring</module>
+  </modules>
 
     <!-- 公共插件定义 -->
     <build>
