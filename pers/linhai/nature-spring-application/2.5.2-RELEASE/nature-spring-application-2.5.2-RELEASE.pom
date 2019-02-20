@@ -17,10 +17,10 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
         </dependency>
-        <dependency>
-            <groupId>${nature.groupId}</groupId>
-            <artifactId>${nature.dao.database.spring.artifactId}</artifactId>
-        </dependency>
+            <dependency>
+                <groupId>${nature.groupId}</groupId>
+                <artifactId>${nature.dao.database.autoconfigure.artifactId}</artifactId>
+            </dependency>
         <dependency>
             <groupId>${nature.groupId}</groupId>
             <artifactId>${nature.spring.common.artifactId}</artifactId>
