@@ -18,9 +18,8 @@
             <artifactId>disruptor</artifactId>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>nature-dao-elasticsearch</artifactId>
-			<version>2.0.2-RELEASE</version>
+            <groupId>${nature.groupId}</groupId>
+            <artifactId>${nature.dao.elasticsearch.artifactId}</artifactId>
         </dependency>
     </dependencies>
 </project>
