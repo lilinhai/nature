@@ -36,8 +36,8 @@
         <nature.artifactId>nature</nature.artifactId>
         <nature.core.artifactId>nature-core</nature.core.artifactId>
         <nature.spring.artifactId>nature-spring</nature.spring.artifactId>
+        <nature.spring.webapplication.artifactId>nature-spring-webapplication</nature.spring.webapplication.artifactId>
         <nature.spring.application.artifactId>nature-spring-application</nature.spring.application.artifactId>
-        <nature.spring.common.artifactId>nature-spring-common</nature.spring.common.artifactId>
         <nature.dao.artifactId>nature-dao</nature.dao.artifactId>
         <nature.dao.database.artifactId>nature-dao-database</nature.dao.database.artifactId>
         <nature.dao.database.spring.artifactId>nature-dao-database-spring</nature.dao.database.spring.artifactId>
@@ -50,8 +50,8 @@
         <nature.version>2.0-RELEASE</nature.version>
         <nature.core.version>2.0.2-RELEASE</nature.core.version>
         <nature.spring.version>2.5-RELEASE</nature.spring.version>
-        <nature.spring.application.version>2.5.2-RELEASE</nature.spring.application.version>
-        <nature.spring.common.version>2.1.0-RELEASE</nature.spring.common.version>
+        <nature.spring.webapplication.version>2.5.2-RELEASE</nature.spring.webapplication.version>
+        <nature.spring.application.version>2.1.0-RELEASE</nature.spring.application.version>
         <nature.dao.version>2.1-RELEASE</nature.dao.version>
         <nature.dao.database.version>2.1.0-RELEASE</nature.dao.database.version>
         <nature.dao.database.spring.version>2.1.0-RELEASE</nature.dao.database.spring.version>
@@ -102,13 +102,13 @@
             </dependency>
             <dependency>
                 <groupId>${nature.groupId}</groupId>
-                <artifactId>${nature.spring.application.artifactId}</artifactId>
-                <version>${nature.spring.application.version}</version>
+                <artifactId>${nature.spring.webapplication.artifactId}</artifactId>
+                <version>${nature.spring.webapplication.version}</version>
             </dependency>
             <dependency>
                 <groupId>${nature.groupId}</groupId>
-                <artifactId>${nature.spring.common.artifactId}</artifactId>
-                <version>${nature.spring.common.version}</version>
+                <artifactId>${nature.spring.application.artifactId}</artifactId>
+                <version>${nature.spring.application.version}</version>
             </dependency>
 
             <!-- 微服务注册中心 -->
