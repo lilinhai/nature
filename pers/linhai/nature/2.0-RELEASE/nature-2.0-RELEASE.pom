@@ -156,7 +156,21 @@
                 <artifactId>spring-jdbc</artifactId>
                 <version>${springframework.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${springframework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${springframework.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -460,11 +474,14 @@
             <artifactId>powermock-api-mockito</artifactId>
         </dependency>
     </dependencies>
-    
+
     <!-- 框架模块 -->
     <modules>
         <module>nature-core</module>
-        <module>nature-dao</module>
+		<module>nature-elegance</module>
+		<module>nature-grace</module>
+		<module>nature-grace-autoconfigure</module>
+		<module>nature-grace-log4jappender</module>
         <module>nature-spring</module>
     </modules>
 
@@ -500,7 +517,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

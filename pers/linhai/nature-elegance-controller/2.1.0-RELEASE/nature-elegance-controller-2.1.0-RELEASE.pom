@@ -7,15 +7,19 @@
         <artifactId>nature-spring</artifactId>
         <version>2.5-RELEASE</version>
     </parent>
-    <artifactId>nature-spring-webapplication</artifactId>
-    <version>2.5.2-RELEASE</version>
+    <artifactId>nature-elegance-controller</artifactId>
+    <version>2.1.0-RELEASE</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>${nature.groupId}</groupId>
-            <artifactId>${nature.spring.application.artifactId}</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
         <dependency>
             <groupId>${nature.groupId}</groupId>
@@ -23,16 +27,9 @@
             <version>2.1.0-RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
+            <groupId>${nature.groupId}</groupId>
+            <artifactId>nature-elegance-service</artifactId>
+            <version>2.1.0-RELEASE</version>
         </dependency>
     </dependencies>
 </project>
