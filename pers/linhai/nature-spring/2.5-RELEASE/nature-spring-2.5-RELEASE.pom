@@ -18,26 +18,19 @@
             <artifactId>${nature.core.artifactId}</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
 
     <modules>
         <module>nature-spring-application</module>
         <module>nature-spring-webapplication</module>
-		<module>nature-spring-controller</module>
-		<module>nature-spring-service</module>
-		<module>nature-elegance-controller</module>
-		<module>nature-elegance-service</module>
+        <module>nature-spring-controller</module>
+        <module>nature-spring-service</module>
+        <module>nature-elegance-controller</module>
+        <module>nature-spring-core</module>
+        <module>nature-elegance-service</module>
         <module>nature-elegance-spring</module>
     </modules>
 </project>

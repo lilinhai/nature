@@ -7,20 +7,12 @@
         <artifactId>nature-spring</artifactId>
         <version>2.5-RELEASE</version>
     </parent>
-    <artifactId>nature-spring-service</artifactId>
+    <artifactId>nature-spring-core</artifactId>
     <version>2.1.0-RELEASE</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>${nature.groupId}</groupId>
-            <artifactId>nature-spring-core</artifactId>
-            <version>2.1.0-RELEASE</version>
-        </dependency>
+
     </dependencies>
 </project>
