@@ -7,6 +7,10 @@
     <versions>
       <version>2.1.0-RELEASE</version>
     </versions>
+<<<<<<< HEAD
     <lastUpdated>20190309131015</lastUpdated>
+=======
+    <lastUpdated>20190308030519</lastUpdated>
+>>>>>>> d0bcf89bd8b942856c4c440f101a6060bfdbbf43
   </versioning>
 </metadata>

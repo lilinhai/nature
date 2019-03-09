@@ -1,4 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+<<<<<<< HEAD
 #Sat Mar 09 21:10:21 CST 2019
+=======
+#Fri Mar 08 11:05:35 CST 2019
+>>>>>>> d0bcf89bd8b942856c4c440f101a6060bfdbbf43
 nature-spring-core-2.1.0-RELEASE.jar>=
 nature-spring-core-2.1.0-RELEASE.pom>=
