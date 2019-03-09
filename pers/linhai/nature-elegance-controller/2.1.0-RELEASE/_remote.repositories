@@ -1,8 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-<<<<<<< HEAD
-#Sat Mar 09 21:10:25 CST 2019
-=======
-#Fri Mar 08 11:05:41 CST 2019
->>>>>>> d0bcf89bd8b942856c4c440f101a6060bfdbbf43
+#Sat Mar 09 21:15:06 CST 2019
 nature-elegance-controller-2.1.0-RELEASE.pom>=
 nature-elegance-controller-2.1.0-RELEASE.jar>=

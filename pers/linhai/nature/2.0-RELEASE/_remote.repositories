@@ -1,7 +1,3 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-<<<<<<< HEAD
-#Sat Mar 09 21:10:10 CST 2019
-=======
-#Fri Mar 08 11:05:06 CST 2019
->>>>>>> d0bcf89bd8b942856c4c440f101a6060bfdbbf43
+#Sat Mar 09 21:14:50 CST 2019
 nature-2.0-RELEASE.pom>=
