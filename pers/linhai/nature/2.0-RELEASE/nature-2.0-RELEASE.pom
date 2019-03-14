@@ -395,7 +395,7 @@
             <dependency>
                 <groupId>com.google.javascript</groupId>
                 <artifactId>closure-compiler</artifactId>
-                <version>v20181210</version>
+                <version>v20190301</version>
             </dependency>
 
             <!-- swagger2 api自动生成器 -->
