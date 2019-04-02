@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>pers.linhai</groupId>
+  <artifactId>nature-grace-log4jappender</artifactId>
+  <versioning>
+    <release>2.0.2-RELEASE</release>
+    <versions>
+      <version>2.0.2-RELEASE</version>
+    </versions>
+    <lastUpdated>20190402043114</lastUpdated>
+  </versioning>
+</metadata>
