@@ -24,7 +24,7 @@
         <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
         <spring.cloud.version>Camden.SR7</spring.cloud.version>
         <springframework.version>5.1.6.RELEASE</springframework.version>
-        <elasticsearch.version>6.7.0</elasticsearch.version>
+        <elasticsearch.version>7.0.1</elasticsearch.version>
         <swagger.version>2.9.2</swagger.version>
         <servlet.api.version>4.0.1</servlet.api.version>
         <jackson.version>2.9.8</jackson.version>
@@ -300,7 +300,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.57</version>
+                <version>1.2.58</version>
             </dependency>
 
             <!-- jackson -->
@@ -355,7 +355,7 @@
             <dependency>
                 <groupId>com.google.javascript</groupId>
                 <artifactId>closure-compiler</artifactId>
-                <version>v20190325</version>
+                <version>v20190415</version>
             </dependency>
 
             <!-- swagger2 api自动生成器 -->
